@@ -4,50 +4,237 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Test task</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-   <div class="title-section" >
+  <div class="container">
+   <div class="title-section section" >
     <h1>Управление рассылками</h1>
-    <p>Здравствуйте Андрей, выбирете категорию писем</p>
+    <p >Здравствуйте Андрей, выбирете категорию писем, от которых хотите отписаться.Но пожалуйста,исключите только те категории,которые действительно Вам не интерисуют.Мы обещаем слать только полезные письма.</p>
    </div>
-   <div>
     <h2>Общие уведомления</h2>
-    <div class="general-section">
+    <div class="general-section section">
         <ul class="general-list">
             <li class="general-item">
-    <p>Приветственная серия</p>
-      <label class="switch">
-        <input type="checkbox">
+    <p class="general-title">Приветственная серия</p>
+      <label class="general-switch switch">
+        <input type="checkbox"  checked>
         <span class="slider round"></span>
       </label>
-      <p>4 полезных и ёмких письма в течении месяца</p>
+      <p class="general-text">4 полезных и ёмких письма в течении месяца</p>
       <li class="general-item">
-        <p>Образовательные вебинары</p>
-          <label class="switch">
-            <input type="checkbox">
+        <p class="general-title">Образовательные вебинары</p>
+          <label class="general-switch switch">
+            <input type="checkbox"  checked>
             <span class="slider round"></span>
           </label>
-          <p>Бесплатные вебинары проходят 1 раз в 2 недели.Вы будете получать 2 письма с напоминанием о предстоящем вебинаре</p>
+          <p class="general-text">Бесплатные вебинары проходят 1 раз в 2 недели.Вы будете получать 2 письма с напоминанием о предстоящем вебинаре</p>
         </li>
         <li class="general-item">
-            <p>Личные сообщения</p>
-              <label class="switch">
-                <input type="checkbox">
+          <div class="tooltip-general">Личные сообщения &#9432
+  <span class="tooltiptext">Письма об обновлениях и улучшениях платформы</span>
+</div>
+           
+              <label class="general-switch switch">
+                <input type="checkbox"   checked>
                 <span class="slider round"></span>
               </label>
               <select class="select" name="interval">
                 <option value="1">Мгновенно</option>
                 <option value="2">1 раз в день</option>
                 <option value="3">Отключить</option>
-            </li>
+              </select>
     </li>
     </ul>
-   
     </div>
+     <h2>Уведомления по сайтам</h2>
+    <div class="notifications-section section">
+     <ul class="notifications-list">
+      <li class="notifications-news">
+      <p class="news-title">Новости</p>
+       <label class="news-switch switch">
+                <input type="checkbox"   checked>
+                <span class="slider round"></span>
+              </label>
+              </li>
+                <h3>Поисковые агенты</h3>
+                <!-- БИЗНЕС -->
+                <p>Бизнес</p>
+                  <li class="notifications-item business">
+                <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  SEO
+</div>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  Продвижение
+</div>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  Аналикита
+</div>
+<div class="tooltip">Детали
+  <span class="tooltiptext">Тут можно прочитать какие то детали</span>
+</div>
+<div class="notifications">
+<label class="notifications-switch switch">
+                <input type="checkbox"  checked>
+                <span class="slider round"></span>
+              </label>
+             <p class="notifications-text">Поисковыйй агент присылает 1 письмо в неделю и только при условии,что найдены новые площадки</p>
+             </div>
+             </li>
+<!-- 123 -->
+ <p>123</p>
+ <li class="notifications-item num">
+                <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  SEO
+</div>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  Продвижение
+</div>
+<div class="tooltip box-one">Детали
+  <span class="tooltiptext">Тут можно прочитать какие то детали</span>
+</div>
+<div class="notifications-box">
+ <label class="notifications-switch switch">
+                <input type="checkbox"  checked>
+                <span class="slider round"></span>
+              </label>
+             </div>
+</li>
+<!-- SEO -->
+ <p>SEO</p>
+ <li class="notifications-item seo">
+                <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  SEO
+</div>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  Продвижение
+</div>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  Аналикита
+</div>
+<div class="tooltip box">Детали
+  <span class="tooltiptext">Тут можно прочитать какие то детали</span>
+</div>
+
+<div class="notifications-box">
+ <label class="notifications-switch switch">
+                <input type="checkbox"  checked>
+                <span class="slider round"></span>
+              </label>
+             </div>
+ </li>
+ <!-- БИРЖ ССЫЛКИ -->
+ <p>Бирж ссылки</p>
+ <li class="notifications-item exchange">
+                <div class="alert ">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  Бирж ссылки.Не обнаружены
+</div>
+<div class="tooltip box-two">Детали
+  <span class="tooltiptext">Тут можно прочитать какие то детали</span>
+</div>
+ <div class="notifications-box">
+ <label class="notifications-switch switch">
+                <input type="checkbox"  checked>
+                <span class="slider round"></span>
+              </label>
+             </div>
+            </li>
+                <h3>Поисковые агенты</h3>
+                <li class="notifications-item">
+                <p class="general-title">Строительство домов в Украине</p>
+                <label class="general-switch switch">
+                <input type="checkbox"  checked>
+                <span class="slider round"></span>
+              </label>
+                <select class="select" name="interval">
+                <option value="1">Мгновенно</option>
+                <option value="2">1 раз в день</option>
+                <option value="3">Отключить</option>
+              </select>
+              </li>
+              <li class="notifications-item">
+                <p class="general-title">Строительство домов в Украине</p>
+                <label class="general-switch switch">
+                <input type="checkbox"  checked>
+                <span class="slider round"></span>
+              </label>
+                <select class="select" name="interval">
+                <option value="1">Мгновенно</option>
+                <option value="2">1 раз в день</option>
+                <option value="3">Отключить</option>
+              </select>
+              </li>
+                </ul>
+              </div>
    
-    <!-- <h2>Уведомления по сайтам</h2> -->
-   
+      <div class="telegram-section section">
+      <h2>Уведомления по Телеграму</h2>
+     <li class="notifications-news">
+      <p class="news-title">Новости</p>
+       <label class="news-switch switch">
+                <input type="checkbox"  checked>
+                <span class="slider round"></span>
+              </label>
+              </li>
+    </div>
+    <div class="completion-section section">
+      <ul class="completion-list">
+        <li class="completion-item">
+          <a href="/index.html">
+      <button class="completion-button">По умолчанию</button>
+      </a>
+     <div class="modal" id="modal">
+     <p class="modal-text">Вы уверены?</p>
+      <a href="#">
+        <button class="close" id="myBtn">ДА</button>
+      </a>
+      <a href="#" class="close">НЕТ</a>
+    </div>
+    <a href="#modal">
+<button class="completion-button current">Сохранить изменения</button>
+</a>
+    </div>
+      </li>
+      </ul>
+      </div>
+    </div>
+     </div>
+<div id="myModal" class="modal-footer">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="exit close-btn">×</span>
+    </div>
+    <div class="modal-body">
+      <p class="modal-title">Изменения сохранены</p>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+const modal = document.getElementById('myModal');
+const btn = document.getElementById("myBtn");
+const span = document.getElementsByClassName("exit")[0];
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 </body>
 </html>
